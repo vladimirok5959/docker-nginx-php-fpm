@@ -39,3 +39,5 @@ docker run \
     -v /path/to/php/files:/var/www/html \
     -d -it vladimirok5959/nginx-php-fpm:latest
 ```
+
+Host network just for example, `-v /etc/timezone:/etc/timezone:ro` for getting time zone from host machine and `-v /path/to/php/files:/var/www/html` for rebind htdocs/www directory with PHP files, just for example if this image used as standalone without inheriting.
