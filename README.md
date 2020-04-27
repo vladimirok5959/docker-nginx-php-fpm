@@ -27,6 +27,10 @@ function LoadEnvironmentVariables() {
         }
     }
 }
+
+// Example:
+LoadEnvironmentVariables();
+var_dump($_ENV);
 ```
 
 ## Running docker container
