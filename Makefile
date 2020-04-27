@@ -20,11 +20,11 @@ docker-test:
 		-it docker-nginx-php-fpm:latest
 
 docker-push:
-	docker tag docker-nginx-php-fpm:latest vladimirok5959/docker-nginx-php-fpm:${VERSION}
-	docker tag docker-nginx-php-fpm vladimirok5959/docker-nginx-php-fpm:latest
+	docker tag docker-nginx-php-fpm:latest vladimirok5959/nginx-php-fpm:${VERSION}
+	docker tag docker-nginx-php-fpm vladimirok5959/nginx-php-fpm:latest
 	docker login
-	docker push vladimirok5959/docker-nginx-php-fpm:${VERSION}
-	docker push vladimirok5959/docker-nginx-php-fpm:latest
-	docker rmi vladimirok5959/docker-nginx-php-fpm:${VERSION}
-	docker rmi vladimirok5959/docker-nginx-php-fpm:latest
+	docker push vladimirok5959/nginx-php-fpm:${VERSION}
+	docker push vladimirok5959/nginx-php-fpm:latest
+	docker rmi vladimirok5959/nginx-php-fpm:${VERSION}
+	docker rmi vladimirok5959/nginx-php-fpm:latest
 	docker rmi docker-nginx-php-fpm:latest
