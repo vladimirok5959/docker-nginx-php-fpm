@@ -14,6 +14,7 @@ RUN apt-get -y update && \
 	apt-get install -y php7.3-zip && \
 	apt-get install -y php7.3-curl && \
 	apt-get install -y php7.3-mysql && \
+	apt-get install -y php7.3-sqlite && \
 	apt-get install -y php7.3-mbstring && \
 	/etc/init.d/nginx stop && \
 	/etc/init.d/php7.3-fpm stop && \
