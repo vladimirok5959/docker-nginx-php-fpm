@@ -1,4 +1,4 @@
-VERSION="1.0.1"
+VERSION="1.0.2"
 
 docker-build:
 	@-docker rmi docker-nginx-php-fpm:latest
